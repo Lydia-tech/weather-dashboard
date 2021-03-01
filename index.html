@@ -3,21 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <title>Weather Dashboard</title>
   </head>
   <body>
     <div class="”input”">
-      <input type="text" class="inputValue" placeholder="Enter a city" />
+      <input type="text" class="inputValue" placeholder="Enter a city" id="query" />
       <br />
-      <input type="submit" value="Submit" class="button" />
+      <div class="input-group-append">
+        <button class="btn btn-outline-primary btn-primary" type="button" id="search-btn"><i
+            class="fas fa-search text-white" id="search-icon" aria-hidden="true"></i></button>
+      </div>
     </div>
-
+    <div id="cityList" class="city-list"></div>
     <div class="display">
       <h1 class="name"></h1>
       <p class="desc"></p>
       <p class="temp"></p>
     </div>
-
+    <div class="city" id="currentDay"></div>
+              <div class="temperature"></div>
+              <div class="real_feel"></div>
+              <div class="temp_low"></div>
+              <div class="temp_high"></div>
+              <div class="humidity"></div>
+              <div class="windspeed"></div>
+              <div class="uvIndex"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
